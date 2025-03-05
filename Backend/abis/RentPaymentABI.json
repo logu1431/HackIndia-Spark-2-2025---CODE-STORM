@@ -1,0 +1,31 @@
+{
+    "abi": [
+      {
+        "inputs": [],
+        "name": "payRent",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "tenant",
+            "type": "address"
+          }
+        ],
+        "name": "getRentStatus",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "paid",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ]
+  }
+  

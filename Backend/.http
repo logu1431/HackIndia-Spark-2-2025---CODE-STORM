@@ -1,0 +1,29 @@
+curl --request POST \
+  --url https://sepolia.infura.io/v3/b0db50fa4e094f7788f5f346b32a26ed \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"jsonrpc":"2.0",
+	"method":"eth_blockNumber",
+	"params":[],
+	"id":3
+}'
+
+
+###
+curl -X POST "http://localhost:8010/api/properties/create" \
+-H "Content-Type: application/json" \
+-d '{
+    "tokenId": 2,
+    "owner": "0xLandlordAddress",
+    "location": "London, USA",
+    "size": "2000 sqft",
+    "price": "5 ETH"
+}'
+
+
+
+###
+GET http://localhost:8010/api/properties/1
+
+
+

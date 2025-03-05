@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Contracts - PAYSTAY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rental_contracts.html">Rental Contracts</a>
+        <a href="view_transactions.html">View Transactions</a>
+        <a href="contact.html">Contact</a>
+        <a href="policy.html">Privacy Policy</a>
+    </nav>
+
+    <header>
+        <h1>Your Rental Contracts</h1>
+        <p>Manage and view all your rental agreements here.</p>
+    </header>
+
+    <section class="contracts">
+        <h2>Existing Contracts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Tenant</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apartment 101</td>
+                    <td>John Doe</td>
+                    <td>01/01/2025</td>
+                    <td>12/31/2025</td>
+                    <td>Active</td>
+                </tr>
+                <!-- Additional contract rows can be added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <section class="add-contract">
+        <h2>Add New Contract</h2>
+        <form action="submit_contract_form.php" method="post">
+            <div class="input-group">
+                <label for="property">Property</label>
+                <input type="text" id="property" name="property" placeholder="Enter property name" required>
+            </div>
+            <div class="input-group">
+                <label for="tenant">Tenant</label>
+                <input type="text" id="tenant" name="tenant" placeholder="Enter tenant's name" required>
+            </div>
+            <div class="input-group">
+                <label for="start_date">Start Date</label>
+                <input type="date" id="start_date" name="start_date" required>
+            </div>
+            <div class="input-group">
+                <label for="end_date">End Date</label>
+                <input type="date" id="end_date" name="end_date" required>
+            </div>
+            <div class="input-group">
+                <label for="status">Status</label>
+                <select id="status" name="status" required>
+                    <option value="active">Active</option>
+                    <option value="expired">Expired</option>
+                    <option value="terminated">Terminated</option>
+                </select>
+            </div>
+            <button type="submit">Add Contract</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PAYSTAY. All rights reserved.</p>
+    </footer>
+</body>
+</html>
